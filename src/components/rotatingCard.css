@@ -1,0 +1,14 @@
+.perspective {
+  perspective: 1000px;
+}
+
+.carousel {
+  transform-style: preserve-3d;
+}
+
+.rotate-y-0    { transform: rotateY(0deg) translateZ(250px); }
+.rotate-y-60   { transform: rotateY(60deg) translateZ(250px); }
+.rotate-y-120  { transform: rotateY(120deg) translateZ(250px); }
+.rotate-y-180  { transform: rotateY(180deg) translateZ(250px); }
+.rotate-y-240  { transform: rotateY(240deg) translateZ(250px); }
+.rotate-y-300  { transform: rotateY(300deg) translateZ(250px); }
