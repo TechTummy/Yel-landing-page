@@ -1,0 +1,16 @@
+/* components/Testimonials.css */
+
+.testimonial-swiper .swiper-pagination-bullets {
+  bottom: -30px;
+  text-align: center;
+}
+
+.testimonial-swiper .swiper-pagination-bullet {
+  background: white;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+
+.testimonial-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
