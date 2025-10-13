@@ -29,44 +29,50 @@ export default function RotatingCarousel() {
   const cards = [
     {
       topLabel: 'Martial Arts',
-      mainHeading: 'Taekwondo + Basketball',
-      subHeading: 'Discipline, strength, perseverance and competition.',
-      description: '',
+      mainHeading: 'Sports Training (Taekwondo & Basketball)',
+      subHeading: '',
+      description: 'Discipline, focus, and teamwork take center court in YEL’s sports programs. From Taekwondo to Basketball, youth build strength, confidence, and leadership that lasts a lifetime.',
+      subText:"Train Hard. Play Smart. Lead Strong.",
       imageSrc: '/assets/teak.png',
     },
     {
       topLabel: '',
       mainHeading: 'Dance',
       subHeading: 'Confidence through movement and performance',
-      description: '',
+      description: 'YEL’s design labs turn imagination into impact — teaching graphic, apparel, and digital design so youth can see their ideas on screens, shirts, and stages.',
+      subText:"Design It. Wear It. Own It.",
       imageSrc: '/assets/dance.png',
     },
     {
       topLabel: 'Design Lab',
-      mainHeading: 'Graphic + Apparel Design',
+      mainHeading: 'Design',
       subHeading: 'Design. Wear it. Digital to Physical goods.',
-      description: '',
+      description: 'YEL’s design labs turn imagination into impact — teaching graphic, apparel, and digital design so youth can see their ideas on screens, shirts, and stages.',
+      subText:"Design It. Wear It. Own It.",
       imageSrc: '/assets/graphics.png',
     },
     {
       topLabel: '',
       mainHeading: 'Music',
       subHeading: 'Production + Performance',
-      description: '',
+      description: 'Step into the studio and create your own sound. From beat-making to live DJ sets, YEL’s music programs help youth turn creativity into confidence — and noise into purpose.',
+      subText:"From Vision Creation.",
       imageSrc: '/assets/music.png',
     },
     {
       topLabel: '',
       mainHeading: 'Production',
       subHeading: 'Photography + Videography',
-      description: 'Visual storytelling through camera composition and creativity.',
+      description: 'Learn the art of storytelling through photography, film, and digital media. Youth master the tools to capture their ideas, shape narratives, and bring their vision to life.',
+      subText:"From Vision Creation.",
       imageSrc: '/assets/production.png',
     },
     {
       topLabel: 'Vocabulary Building',
       mainHeading: 'Life Skills',
       subHeading: 'Financial literacy + More',
-      description: 'Discipline, strength, perseverance and competition.',
+      description: 'Financial literacy, communication, and leadership — YEL’s life-skills workshops give youth the real-world tools to take control of their futureand thrive wherever they go.',
+      subText:"From Vision Creation.",
       imageSrc: '/assets/vq.png',
     },
   ];
@@ -89,6 +95,7 @@ export default function RotatingCarousel() {
               subHeading={item.subHeading}
               description={item.description}
               imageSrc={item.imageSrc}
+              subText={item.subText}
             />
           </div>
         </SwiperSlide>
@@ -96,7 +103,7 @@ export default function RotatingCarousel() {
     </Swiper>
   </div>
 ) : (
-        <div className="relative flex flex-col items-center justify-center py-10 font-sans text-white min-h-screen px-4 sm:px-0">
+        <div className="relative flex flex-col items-center font-sans text-white min-h-screen px-4 sm:px-0 md:mt-60">
           <div className="relative w-full max-w-[320px] sm:max-w-[300px] h-[250px] sm:h-[220px] perspective">
             <div
               className="carousel w-full h-full absolute transform-style preserve-3d transition-transform duration-1000"
@@ -114,6 +121,7 @@ export default function RotatingCarousel() {
                     subHeading={item.subHeading}
                     description={item.description}
                     imageSrc={item.imageSrc}
+                    subText={item.subText}
                   />
                 </div>
               ))}

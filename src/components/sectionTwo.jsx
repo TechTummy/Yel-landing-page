@@ -8,7 +8,6 @@ function SectionTwo() {
       {/* Hero Section with overlay button */}
       <div className="relative">
         <HeroSection />
-
         {/* Positioned Button */}
         <a
           href="#"
@@ -29,7 +28,7 @@ function SectionTwo() {
         <img src="/assets/text.png" className="max-w-[700px] w-full mt-20" />
 
         {/* Highlighted Words */}
-        <div className="font-semibold text-[24px] sm:text-[30px] font-montserrat p-5 flex flex-wrap gap-4 items-center justify-center text-white text-center">
+        <div className="font-semibold text-[24px] sm:text-[30px] font-montserrat p-5 flex flex-wrap gap-16 items-center justify-center text-white text-center">
           {['Entertainment', 'Education', 'Sports'].map((word, idx) => (
             <h1
               key={idx}
@@ -42,12 +41,17 @@ function SectionTwo() {
 
         {/* Description */}
         <p className="text-center text-white bg-gradient-to-r from-[#FFFFFF] to-[#5C5781] bg-clip-text text-transparent font-montserrat max-w-xl text-sm sm:text-base">
-          Post-COVID youth recovery & development with a focus on morale, motivation, and discipline.
+          At YEL, we believe every young person holds creative power.
+        </p>
+        <p className="text-center text-white bg-gradient-to-r from-[#FFFFFF] to-[#5C5781] bg-clip-text text-transparent font-montserrat max-w-xl text-sm sm:text-base">
+          We exist to inspire, empower, and guide youth through hands-on,
+          interactive programs that blend education and entertainment — 
+          helping them turn curiosity into confidence, and passion into purpose.
         </p>
 
         {/* Mission and Stats */}
         <HomeLayout>
-          <div className="bg-[#291A4B] p-6 rounded-lg flex flex-col md:flex-row font-montserrat gap-6 items-stretch mt-8 w-full">
+          <div className="bg-gradient-to-r  from-[#1D0B47] via-[#2A1A4C] to-[#1D0C48] p-6 rounded-lg flex flex-col md:flex-row font-montserrat gap-6 items-stretch mt-8 w-full">
             {/* Left Section */}
             <div className="flex flex-1 gap-4 items-center justify-center">
               <img
@@ -59,8 +63,12 @@ function SectionTwo() {
                 <h1 className="bg-gradient-to-r from-white via-[#f5c46d] via-60% to-[#cf1d0d] bg-clip-text text-transparent text-[20px] sm:text-[24px] font-semibold">
                   YEL'S MISSION
                 </h1>
-                <p className="text-[13px] sm:text-[14px] font-semibold text-white mt-2 max-w-xs">
-                  To inspire, empower and guide youth through interactive workshops.
+                <p className="text-[13px] sm:text-[14px] font-normal text-sm text-white mt-2 max-w-xs">
+                  To inspire, empower
+                  and guide 
+                  youth
+                  through interactive, hands-on
+                  workshops that unlock confidence, creativity, and discipline
                 </p>
               </div>
             </div>
@@ -70,12 +78,12 @@ function SectionTwo() {
 
             {/* Right Section */}
             <div className="flex flex-1 gap-4 items-center justify-center">
-              <h1 className="bg-gradient-to-r from-white via-[#f5c46d] via-60% to-[#cf1d0d] bg-clip-text text-transparent text-[60px] sm:text-[100px] font-bold">
-                37,000
+              <h1 className="bg-gradient-to-r from-white via-[#f5c46d] via-60% to-[#cf1d0d] bg-clip-text text-transparent text-[60px] sm:text-[70px] font-semibold">
+                41,258+
               </h1>
               <div>
-                <h2 className="text-white font-bold text-[16px] sm:text-[20px]">Youth Served</h2>
-                <p className="text-white text-sm">• Year to Date</p>
+                <h2 className="text-white font-bold text-[16px] ">Lives Touched</h2>
+                <p className="text-white text-sm">and counting</p>
               </div>
             </div>
           </div>

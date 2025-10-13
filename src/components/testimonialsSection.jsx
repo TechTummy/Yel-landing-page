@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import './Testimonials.css'; // 👈 custom styling for white pagination
 import { useState } from 'react';
+import HomeLayout from '../layouts/HomeLayout';
 
 const testimonials = [
   {
@@ -56,6 +57,45 @@ const faqs = [
   },
 ];
 
+const leaders = [
+  {
+    id: 1,
+    name: "Yubin Chang",
+    title: "President of Hope Global Outreach Foundation",
+    img: "./assets/woman.png",
+    details: [
+      "30+ years as an educator and motivational speaker",
+      "First-generation immigrant from South Central LA",
+      "Built a successful career in education in Orange County",
+      "Founder of Hope GOF, nurturing youth leadership and opportunity",
+    ],
+  },
+  {
+    id: 2,
+    name: "Darius Farrelly",
+    title: "President of Hope Global Outreach Foundation",
+    img: "./assets/man1.png",
+    details: [
+      "30+ years as an educator and motivational speaker",
+      "First-generation immigrant from South Central LA",
+      "Built a successful career in education in Orange County",
+      "Founder of Hope GOF, nurturing youth leadership and opportunity",
+    ],
+  },
+  {
+    id: 3,
+    name: "Joshua Sykes",
+    title: "President of Hope Global Outreach Foundation",
+    img: "./assets/man2.png",
+    details: [
+      "30+ years as an educator and motivational speaker",
+      "First-generation immigrant from South Central LA",
+      "Built a successful career in education in Orange County",
+      "Founder of Hope GOF, nurturing youth leadership and opportunity",
+    ],
+  },
+];
+
 export default function Testimonials() {
     const [activeIndex, setActiveIndex] = useState(0);
   
@@ -64,49 +104,43 @@ export default function Testimonials() {
     };
   
   return (
-    <section className="bg-[#070322] bg-[url('/assets/yel_circle.png')] bg-cover bg-center bg-no-repeat py-6 font-montserrat text-white overflow-hidden">
-      <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-semibold">Don’t Trust Us, Trust</h2>
-        <p className="text-3xl bg-gradient-to-b from-white via-gray-400 via-60% to-gray-500 bg-clip-text text-transparent font-semibold pt-3">Their Voice</p>
+    <section className="bg-[#070322]  py-6 font-montserrat text-white overflow-hidden">
+      <div className='flex flex-col justify-center items-center gap-6 mb-20'>
+       <p className='font-bold text-[24px] bg-gradient-to-r from-[#ece7d2] via-[#f5c46d] text-center via-60% to-[#e94b3c] bg-clip-text text-transparent'>The Echo of YEL: From Participants to Leaders..</p>
+      <p className='z-30 text-center text-white font-bold m-0 w-[60%]'>Many who first discovered YEL through a Rally or class now mentor others — 
+proof that YEL’s influence doesn’t end when the event does.</p>
+      <p className='z-30 text-center text-white font-bold m-0 w-[60%]'>Our alumni are walking testaments of impact — the once-quiet voices now leading, teaching, and amplifying others.”</p>
       </div>
+      <div className="">
+        <HomeLayout>
+          <div className='flex flex-col justify-center items-center'>
 
-      <div className="max-w-7xl mx-auto px-4">
-        <Swiper
-          modules={[Pagination]}
-          spaceBetween={30}
-          slidesPerView={'auto'}
-          centeredSlides={true}
-          loop={true}
-          autoplay={{ delay: 1000 }}
-          pagination={{ clickable: true }}
-          className="testimonial-swiper"
-     
-        >
-          {testimonials.map((item, idx) => (
-            <SwiperSlide key={idx} className="!w-[320px] sm:!w-[400px] md:!w-[420px]">
-
-              <div className="rounded-[20px] h-[100%] p-4 bg-gradient-to-br from-[#1c0b3e]/20 to-[#221140]/90 backdrop-blur-[10px] border border-white/20 hover:border-white/30  transition duration-300">
-                <h3 className="text-xl md:text-2xl font-semibold text-center mb-4">
-                  {item.title}
-                </h3>
-                <p className="text-xs text-gray-300 text-center mb-4 ">
-                  {item.content}
-                </p>
-                <div className="border-t border-white/20 mb-2 mx-auto w-[60%]"></div>
-                <p className="text-center font-semibold text-lg">{item.author}</p>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        <div className="flex flex-col items-center justify-center mt-20 gap-4 ">
-          <h2 className="text-3xl md:text-4xl font-semibold w-[300px] text-center">Proven Track Record</h2>
-        <button className="px-6 py-2 text-white text-xs font-medium rounded-full bg-gradient-to-br from-[#0C011A] via-[#4C1E9F] to-[#E54D1E] shadow-md hover:opacity-90 transition duration-300">
-        Join Us
-        </button>
-        </div>
-        
+          <img 
+          src='./assets/leadership.png'
+          alt='img'
+          />
+          <p className='font-bold text-[24px] bg-gradient-to-r from-[#ece7d2] via-[#f5c46d] text-center via-60% to-[#e94b3c] bg-clip-text text-transparent w-[60%]'>Youth Enrichment Leaders: Guiding the next generation with creativity, confidence, and real-world skills.</p>
+          </div>
+          <div className="mt-10 flex flex-col justify-center items-center bg-[url('/assets/yel_circle.png')] bg-cover bg-center bg-no-repeat">
+        {leaders.map((leader) => (
+          <div key={leader.id} className="flex gap-8 mb-10 last:mb-0">
+            <img src={leader.img} alt={leader.name} className="w-[150px]" />
+            <div className="flex flex-col">
+              <p className="font-bold text-[24px] bg-gradient-to-r from-[#ece7d2] via-[#f5c46d] via-60% to-[#e94b3c] bg-clip-text text-transparent">
+                {leader.name}
+              </p>
+              <p className="font-bold">{leader.title}</p>
+              <ul className="list-disc ml-5">
+                {leader.details.map((detail, i) => (
+                  <li key={i}>{detail}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
       </div>
-
+        </HomeLayout>
+      </div>
     </section>
   );
 }

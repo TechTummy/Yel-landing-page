@@ -13,7 +13,7 @@ export default function HeroShapeCarousel() {
   return (
     <div className="relative w-full h-[400px] overflow-hidden">
       {/* Background Swiper */}
-      <Swiper
+      {/* <Swiper
         modules={[Autoplay, EffectFade]}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         effect="fade"
@@ -28,8 +28,15 @@ export default function HeroShapeCarousel() {
             ></div>
           </SwiperSlide>
         ))}
-      </Swiper>
-
+      </Swiper> */}
+      <video
+      src="/assets/yel_vid1.mp4"
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="w-full h-auto object-cover"
+    ></video>
       {/* Button ABOVE the curve */}
 
       {/* Curve Shape */}

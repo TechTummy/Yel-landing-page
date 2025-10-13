@@ -18,13 +18,13 @@ export default function MovementSection() {
     }, []);
   return (
     <div className="font-montserrat relative z-0">
-        <div className=' inset-0 bg-gradient-to-b from-[#070322] via-[#070322cc]/80 to-transparent h-[300px] z-0 absolute'></div>
+        {/* <div className=' inset-0 bg-gradient-to-b from-[#070322] via-[#070322cc]/80 to-transparent h-[200px] z-0 absolute'></div> */}
       <HomeLayout>
         {/* Top Centered Images */}
       <img
-        src="/assets/move.png"
+        src="/assets/movement2.png"
         alt="Movement Section"
-        className="w-auto sm:w-[1000px] mx-auto relative z-10 mb-20 pt-10 "
+        className="w-auto sm:w-[1000px] mx-auto relative z-10 mb-10 pt-10 "
         />
 
           {
@@ -47,42 +47,35 @@ export default function MovementSection() {
             
                
         )
+        
         }
-
-        {/* 3-column layout */}
-        <div className="flex flex-col md:flex-row w-full mt-10 md:mt-14 gap-6 px-4 md:px-0">
-          {/* Left Column */}
-          <div className="flex-1 flex justify-center">
-            <img
-              src="/assets/sometime.png"
-              alt="Movement Icon"
-              className="w-[200px] sm:w-[250px] md:w-[100%] object-contain"
-            />
-          </div>
-
-          {/* Center Column */}
-          <div className="flex-1 flex justify-center items-center">
-            <img
-              src="/assets/yel.png"
-              alt="YEL Logo"
-              className="w-[250px] sm:w-[400px] md:w-[1000px] object-contain"
-            />
-          </div>
-
-          {/* Right Column */}
-          <div className="flex-1 flex flex-col justify-center items-center md:items-start text-center md:text-left">
-            <h1 className="font-black text-[24px] sm:text-[28px] md:text-[30px] leading-tight mb-4">
-              <span>YOUTH</span>
-              <span className="text-[#F06C23] block">EDUTAINMENT</span>
-              <span className="text-[#4F2977] block">LEAGUE</span>
-            </h1>
-            <img
-              src="/assets/heard.png"
-              alt="Movement Icon"
-              className="w-[250px] sm:w-[400px] md:w-[500px]"
-            />
-          </div>
+        <div>
         </div>
+             <div className="flex flex-1 flex-col gap-4 items-center justify-center">
+        <p className='text-center  font-bold w-[60%]'>YEL has served thousands of youth across Los Angeles, engaging them 
+in programs that spark creativity and connect them to real-world opportunity.</p>
+              <h1 className="bg-gradient-to-r from-[#070322] via-60% to-[#cf1d0d] bg-clip-text text-transparent text-[60px] sm:text-[70px] font-semibold">
+                41,258+
+              </h1>
+               <p className='font-bold text-2xl bg-gradient-to-r from-[#000000] via-[#4B2E84] text-center via-60% to-[#F3732A] bg-clip-text text-transparent mb-4'>Youth & Community Members Reached.</p>
+               <img src="/assets/stats.png"  />
+                 <img
+            src="/assets/shadow.png" 
+            alt="alumni"
+            className="w-[50%] mt-9"
+          />
+          <p className='font-bold text-2xl bg-gradient-to-r from-[#000000] via-[#4B2E84] text-center via-60% to-[#F3732A] bg-clip-text text-transparent mb-4 w-[70%]'>YEL doesn’t just build skills.It builds voices, leaders, and movements.</p>
+          <p className='font-semibold text-[#070322] mb-4 w-[70%] text-center'>Every young person who steps into YEL discovers the power of their own voice,  and the courage to use it. Each idea shared, each performance, each creation becomes a shout of possibility that echoes far beyond the room.</p>
+          <p className='font-semibold text-[#070322] mb-4 w-[70%] text-center'>
+Those echoes reach families, classrooms, and communities, amplifying creativity, confidence, and hope</p>
+          <p className='font-semibold text-[#070322] mb-4 w-[70%] text-center'>
+At YEL, we don’t just help youth speak up — we help them stand out, stand tall, and be heard</p>
+ <img
+            src="/assets/shadow.png" 
+            alt="alumni"
+            className="w-[50%] mt-9"
+          />
+            </div>
       </HomeLayout>
 
       {/* Bottom Gradient */}

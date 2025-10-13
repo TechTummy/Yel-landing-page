@@ -11,16 +11,16 @@ function Header() {
       {/* Foreground content */}
       <div className="relative z-10">
         {/* Top Banner */}
-        <div className="h-[48px] bg-gradient-to-r from-[#28165B] via-[#070322]/60 to-[#28165B]/40 flex items-center">
-          <img src="/assets/ray.png" alt="Line" className="w-full absolute" />
-          <img
+        <div className="h-[48px] bg-gradient-to-r from-[#5900FF] via-[#070322] to-[#FF5900] flex items-center">
+          {/* <img src="/assets/ray.png" alt="Line" className="w-full absolute" /> */}
+          {/* <img
             src="/assets/stars.png"
             alt="Line"
             className="w-full object-cover absolute h-[48px]"
-          />
+          /> */}
           <Layout>
-            <p className="font-montserrat font-light text-white text-[12px] sm:text-[14px] flex items-center gap-2 z-10 text-center justify-center">
-              Begin an Application to Host a YEL Camp · Volunteer · Become an Instructor
+            <p className="font-montserrat font-light text-white text-[12px] sm:text-[14px] flex items-center gap-2 z-10">
+              <p className='text-left'>Begin an Application to Host a YEL Camp · Volunteer · Become an Instructor</p>
               <span className="font-bold">Learn more</span>
               <IoChevronForward />
             </p>
@@ -28,8 +28,8 @@ function Header() {
         </div>
 
         {/* Nav Section */}
-        <div className="bg-[#1C1935] py-3">
-          <img
+        <div className="bg-[#070322] py-3">
+          {/* <img
             src="/assets/ray.png"
             alt="Line"
             className="w-full absolute object-cover h-[64px]"
@@ -38,15 +38,20 @@ function Header() {
             src="/assets/stars.png"
             alt="Line"
             className="w-full object-cover absolute h-[64px]"
-          />
+          /> */}
           <Layout>
-            <div className="flex flex-col md:flex-row justify-between items-center gap-y-4 md:gap-y-0 font-montserrat z-10 relative">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-y-4 md:gap-y-0 md:gap-6 font-montserrat z-10 relative">
               {/* Logo */}
               <a href="/" className="flex items-center justify-center z-10">
                 <img
+                  src="/assets/hope.png"
+                  alt="Logo"
+                  className="w-[150px] sm:w-[180px] h-auto mr-6"
+                />
+                <img
                   src="/assets/logo.png"
                   alt="Logo"
-                  className="w-[120px] sm:w-[150px] h-auto"
+                  className="w-[150px] sm:w-[180px] h-auto"
                 />
               </a>
 
