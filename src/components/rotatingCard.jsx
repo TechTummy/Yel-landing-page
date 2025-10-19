@@ -28,6 +28,56 @@ export default function RotatingCarousel() {
 
   const cards = [
     {
+      topLabel: '',
+      mainHeading: 'Sports Training (Taekwondo & Basketball)',
+      subHeading: "",
+      description: 'Discipline, strength, perseverance and competition.',
+      subText:"",
+      imageSrc: '/assets/teak.png',
+    },
+    {
+      topLabel: '',
+      mainHeading: 'Dance',
+      subHeading: '',
+      description: "Confidence through movement and performance",
+      subText:"",
+      imageSrc: '/assets/dance.png',
+    },
+    {
+      topLabel: 'Design Lab',
+      mainHeading: 'Design',
+      subHeading: '',
+      description: 'Design. Wear it. Digital to Physical goods.',
+      subText:"",
+      imageSrc: '/assets/graphics.png',
+    },
+    {
+      topLabel: '',
+      mainHeading: 'Music',
+      subHeading: 'Production + Performance',
+      description: "Each track becomes more than music —it’s a voice, a story, and a statement of self.",
+      subText:"From Vision Creation.",
+      imageSrc: '/assets/music.png',
+    },
+    {
+      topLabel: '',
+      mainHeading: 'Production',
+      subHeading: 'Photography + Videography',
+      description: "Visual storytelling through camera composition, and creativity.",
+      subText:"From Vision Creation.",
+      imageSrc: '/assets/production.png',
+    },
+    {
+      topLabel: 'Vocabulary Building',
+      mainHeading: 'Life Skills',
+      subHeading: 'Financial literacy + More',
+      description: "Discipline, strength, perseverance and competition.",
+      subText:"From Vision Creation.",
+      imageSrc: '/assets/vq.png',
+    },
+  ];
+  const cards2 = [
+    {
       topLabel: 'Martial Arts',
       mainHeading: 'Sports Training (Taekwondo & Basketball)',
       subHeading: '',
