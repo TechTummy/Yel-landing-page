@@ -115,7 +115,7 @@ export default function InfoCard({
 
   return (
     <>
-      <div className="rounded-[16px] h-[350px] w-[auto] p-6 text-white bg-[url('./assets/cardback.png')] bg-center overflow-hidden shadow-lg flex flex-col items-center justify-between font-montserrat">
+      <div className="rounded-[16px] h-[350px] w-[auto] p-6 text-white bg-gradient-to-br from-[#4B2E84] via-[#000000] via-60% to-[#F3732A] bg-center overflow-hidden shadow-lg flex flex-col items-center justify-between font-montserrat">
         {/* Top Text Content */}
         <div className="z-10">
           {topLabel && (
