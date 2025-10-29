@@ -11,7 +11,7 @@ const images = [
 
 export default function HeroShapeCarousel() {
   return (
-    <div className="relative w-full h-[400px] overflow-hidden">
+    <div className="relative w-full  overflow-hidden">
       {/* Background Swiper */}
       {/* <Swiper
         modules={[Autoplay, EffectFade]}
@@ -44,7 +44,7 @@ export default function HeroShapeCarousel() {
       <div className="absolute  left-1/2 transform -translate-x-1/2 w-full flex justify-center">
       </div>
       <div className="absolute bottom-0 left-0 w-full bg-[url('/assets/fire.png')]  bg-cover overflow-hidden leading-[0] z-[1]">
-        <svg
+        {/* <svg
           viewBox="0 0 500 150"
           preserveAspectRatio="none"
           className="w-full h-[130px] bg-[url('/assets/fire.png')] bg-cover bg-no-repeat"
@@ -54,7 +54,7 @@ export default function HeroShapeCarousel() {
             fill="#070322"
             className="bg-[url('/assets/fire.png')] bg-cover "
           />
-        </svg>
+        </svg> */}
       </div>
     </div>
   );

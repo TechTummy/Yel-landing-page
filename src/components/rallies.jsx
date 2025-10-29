@@ -3,7 +3,7 @@ import HomeLayout from '../layouts/HomeLayout'
 import "./style.css"
 export default function Rallies() {
   return (
-    <div className='font-montserrat'>
+    <div className='font-montserrat' id='yel-rallies'>
         <div className='flex flex-col justify-center items-center inset-0 bg-gradient-to-b from-[#070322] via-[#070322] to-transparent'>
              <p className='font-semibold
               text-[24px] bg-gradient-to-r from-[#ece7d2] via-[#f5c46d] text-center via-60% to-[#e94b3c] bg-clip-text text-transparent mb-10'>Feel the Energy. Experience the Impact.</p>

@@ -6,7 +6,7 @@ function SectionTwo() {
   return (
     <>
       {/* Hero Section with overlay button */}
-      <div className="relative">
+      <div className="relative" id='home' >
         <HeroSection />
         {/* Positioned Button */}
         <a
@@ -15,16 +15,38 @@ function SectionTwo() {
           rel="noopener noreferrer"
           className="absolute left-1/2 top-[370px] sm:top-[360px] transform -translate-x-1/2 z-20"
         >
-          <img
+          {/* <img
             src="/assets/button.png"
             alt="Hero Logo"
             className="w-[50px] sm:w-[60px] hover:scale-110 transition-transform duration-300 ease-in-out"
-          />
+          /> */}
         </a>
       </div>
 
       {/* Section Content */}
       <div className="bg-[#070322] flex flex-col items-center justify-center relative overflow-hidden gap-5 px-4 pb-12">
+          <img
+            src="/assets/Rectangle12.png"
+            alt="Hero Logo"
+            className="mt-5"
+          />
+        <div className='flex gap-8 mt-5'>
+            <img
+            src="/assets/left.png"
+            alt="Hero Logo"
+            className="w-[300px]"
+          />
+              <img
+            src="/assets/button.png"
+            alt="Hero Logo"
+            className="w-[60px] sm:w-[60px] hover:scale-110 transition-transform duration-300 ease-in-out"
+          />
+            <img
+            src="/assets/right.png"
+            alt="Hero Logo"
+            className="w-[300px]"
+          />
+        </div>
         <img src="/assets/text.png" className="max-w-[700px] w-full mt-20" />
 
         {/* Highlighted Words */}

@@ -51,7 +51,7 @@ export default function MovementSection() {
         }
         <div>
         </div>
-             <div className="flex flex-1 flex-col gap-4 items-center justify-center">
+             <div id='impact' className="flex flex-1 flex-col gap-4 items-center justify-center">
         <p className='text-center  font-bold w-[60%]'>YEL has served thousands of youth across Los Angeles, engaging them 
 in programs that spark creativity and connect them to real-world opportunity.</p>
               <h1 className="bg-gradient-to-r from-[#070322] via-60% to-[#cf1d0d] bg-clip-text text-transparent text-[60px] sm:text-[70px] font-semibold">

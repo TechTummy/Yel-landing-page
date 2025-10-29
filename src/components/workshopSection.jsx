@@ -3,7 +3,7 @@ import RotatingCard from './rotatingCard.jsx';
 
 export default function WorkshopSection() {
   return (
-    <div className="bg-[#070322] bg-[url('/assets/bg-2.png')] bg-no-repeat bg-cover  px-4 sm:px-6 md:px-0 py-20 md:py-20 h-full ">
+    <div id='programs' className="bg-[#070322] bg-[url('/assets/bg-2.png')] bg-no-repeat bg-cover  px-4 sm:px-6 md:px-0 py-20 md:py-20 h-full ">
       <div className='flex flex-col gap-3 justify-center items-center'>
         <img 
         src="/assets/logo-3.png"

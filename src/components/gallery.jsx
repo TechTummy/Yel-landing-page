@@ -181,20 +181,26 @@ export default function GallerySection() {
        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div className="grid gap-4">
            <div>
-            <img
-                className="h-auto max-w-full rounded-lg"
-                src="/assets/gal1.JPG"
-                alt="Gallery Image 1"
-                onClick={() => handleImageClick({ src: "/assets/gal1.JPG", alt: "Gallery Image 1" })}
-            />
+           <video
+                src="/assets/yel_vid9.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-auto object-cover"
+                onClick={() => handleImageClick({ src: "/assets/yel_vid9.mp4", alt: "Gallery Video" })}
+            ></video>
             </div>
             <div>
-            <img
-                className="h-auto max-w-full rounded-lg"
-                src="./assets/gal2.JPG"
-                alt="Gallery Image 2"
-                onClick={() => handleImageClick({ src: "./assets/gal2.JPG", alt: "Gallery Image 2" })}
-            />
+             <video
+                src="/assets/yel_vid8.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-[200px] h-auto object-cover"
+                onClick={() => handleImageClick({ src: "/assets/yel_vid8.mp4", alt: "Gallery Video" })}
+            ></video>
             </div>
             <div>
              <video
@@ -258,6 +264,26 @@ export default function GallerySection() {
             ></video>
             </div>
             <div>
+           <video
+                src="/assets/yel_vid12.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-auto object-cover"
+                onClick={() => handleImageClick({ src: "/assets/yel_vid12.mp4", alt: "Gallery Video" })}
+            ></video>
+           <video
+                src="/assets/yel_vid13.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-auto object-cover"
+                onClick={() => handleImageClick({ src: "/assets/yel_vid12.mp4", alt: "Gallery Video" })}
+            ></video>
+            </div>
+            <div>
            
             </div>
             <div>
@@ -265,29 +291,41 @@ export default function GallerySection() {
             </div>
         </div>
 
-        {/* <div className="grid gap-4">
+        <div className="grid gap-4">
             <div>
-            <img
-                className="h-auto max-w-full rounded-lg"
-                src="/assets/carou4.png"
-                alt="Gallery Image 10"
-            />
+            <video
+                src="/assets/yel_vid10.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-auto object-cover"
+                onClick={() => handleImageClick({ src: "/assets/yel_vid10.mp4", alt: "Gallery Video" })}
+            ></video>
             </div>
             <div>
-            <img
-                className="h-auto max-w-full rounded-lg"
-                src="/assets/carou2.png"
-                alt="Gallery Image 11"
-            />
+            <video
+                src="/assets/yel_vid11.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-auto object-cover"
+                onClick={() => handleImageClick({ src: "/assets/yel_vid11.mp4", alt: "Gallery Video" })}
+            ></video>
             </div>
             <div>
-            <img
-                className="h-auto max-w-full rounded-lg"
-                src="/assets/carou10.png"
-                alt="Gallery Image 12"
-            />
+            <video
+                src="/assets/yel_vid8.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-auto object-cover"
+                onClick={() => handleImageClick({ src: "/assets/yel_vid8.mp4", alt: "Gallery Video" })}
+            ></video>
             </div>
-        </div> */}
+        </div>
         </div>
         </section>
 

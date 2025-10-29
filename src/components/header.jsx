@@ -11,7 +11,7 @@ function Header() {
       {/* Foreground content */}
       <div className="relative z-10">
         {/* Top Banner */}
-        <div className="h-[48px] bg-gradient-to-r from-[#5900FF] via-[#070322] to-[#FF5900] flex items-center">
+        <div className="h-[48px] bg-gradient-to-r from-[#30077c] via-[#070322] to-[#14095c] flex items-center">
           {/* <img src="/assets/ray.png" alt="Line" className="w-full absolute" /> */}
           {/* <img
             src="/assets/stars.png"
@@ -56,10 +56,16 @@ function Header() {
               </a>
 
               {/* Nav Menu */}
-              <div className="flex flex-wrap justify-center gap-4 text-white text-sm bg-gradient-to-br from-[#000000] via-[#351A45] to-[#D5521E] rounded-3xl px-4 py-2 z-10">
-                {['Home', 'Programs', 'Camp Showbiz', 'Contact', 'Reviews'].map((item, i) => (
-                  <a key={i} href="#">
-                    <span className="whitespace-nowrap">{item}</span>
+              <div className="flex flex-wrap justify-center gap-4 text-white text-sm bg-gradient-to-b from-[#000000] via-[#351A45] to-[#a33307] rounded-3xl px-4 py-2 z-10">
+                {[
+                  { name: 'Home', id: 'home' },
+                  { name: 'Programs', id: 'programs' },
+                  { name: 'Camp Showbiz', id: 'camp-showbiz' },
+                  { name: 'YEL Rallies', id: 'yel-rallies' },
+                  { name: 'Impact', id: 'impact' },
+                ].map((item, i) => (
+                  <a key={i} href={`#${item.id}`} className="hover:underline">
+                    <span className="whitespace-nowrap">{item.name}</span>
                   </a>
                 ))}
               </div>

@@ -73,25 +73,25 @@ const leaders = [
   {
     id: 2,
     name: "Darius Farrelly",
-    title: "President of Hope Global Outreach Foundation",
+    title: "Founder of YEL  CEO of Hope Global . Outreach Foundation",
     img: "./assets/man1.png",
     details: [
-      "30+ years as an educator and motivational speaker",
-      "First-generation immigrant from South Central LA",
-      "Built a successful career in education in Orange County",
-      "Founder of Hope GOF, nurturing youth leadership and opportunity",
+      "25+ years in the entertainment industry",
+      "Launched careers of La La Anthony, MTV’s Sway Calloway, Les Brown",
+      "Dedicated to youth empowerment and real-world skill-building",
+      "Architect of YEL’s dynamic arts, sports, and performance programs",
     ],
   },
   {
     id: 3,
     name: "Joshua Sykes",
-    title: "President of Hope Global Outreach Foundation",
+    title: "Creative Director of YEL",
     img: "./assets/man2.png",
     details: [
-      "30+ years as an educator and motivational speaker",
-      "First-generation immigrant from South Central LA",
-      "Built a successful career in education in Orange County",
-      "Founder of Hope GOF, nurturing youth leadership and opportunity",
+      "15+ years as a Creative Director and Experiential Designer",
+      "Spearheaded major youth tech and design initiatives including the South LA Best Buy Teen Tech Center",
+      "Dedicated to empowering youth through arts, technology, and immersive creative experiences",
+
     ],
   },
 ];
@@ -123,7 +123,7 @@ proof that YEL’s influence doesn’t end when the event does.</p>
           </div>
           <div className="mt-10 flex flex-col justify-center items-center bg-[url('/assets/yel_circle.png')] bg-cover bg-center bg-no-repeat">
         {leaders.map((leader) => (
-          <div key={leader.id} className="flex gap-8 mb-10 last:mb-0">
+          <div key={leader.id} className="flex gap-10 mb-10 last:mb-0 w-[80%]">
             <img src={leader.img} alt={leader.name} className="w-[150px]" />
             <div className="flex flex-col">
               <p className="font-bold text-[24px] bg-gradient-to-r from-[#ece7d2] via-[#f5c46d] via-60% to-[#e94b3c] bg-clip-text text-transparent">
