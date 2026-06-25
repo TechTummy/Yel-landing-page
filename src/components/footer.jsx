@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
         {/* Logo & description */}
         <div className="space-y-4">
-          <img src='/assets/hope-footer.png' alt='Hope Global Outreach Foundation' className='w-[80%]' />
+          <img src='/assets/hope-footer.png' alt='Barbara Allen Legacy Foundation' className='w-[40%]' />
         </div>
         <div className="space-y-4">
           <div className="flex items-center gap-2">
