@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../layouts/HomeLayout';
 import { IoChevronForward } from 'react-icons/io5';
+import RegisterModal from './RegisterModal';
 
 function Header() {
   return (
@@ -70,11 +71,8 @@ function Header() {
                 ))}
               </div>
 
-              {/* CTA Button */}
-              <button className="bg-gradient-to-b from-[#ff7700] to-[#ff9f00] text-white font-bold text-sm px-4 py-2 rounded-3xl flex items-center z-10">
-                <img src="/assets/icon.png" alt="icon" className="w-4 h-4 mr-2" />
-                Register Today!
-              </button>
+              {/* CTA Button — opens the registration intake form */}
+              <RegisterModal />
             </div>
           </Layout>
         </div>

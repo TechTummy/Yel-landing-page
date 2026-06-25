@@ -8,6 +8,10 @@ export default function Footer() {
         {/* Logo & description */}
         <div className="space-y-4">
           <img src='/assets/hope-footer.png' alt='Barbara Allen Legacy Foundation' className='w-[40%]' />
+          <div className="text-xs text-gray-300 space-y-1">
+            <p>Phone: <a href="tel:+13233057255" className="hover:text-white">323-305-7255</a></p>
+            <p>Fax: 323-389-1527</p>
+          </div>
         </div>
         <div className="space-y-4">
           <div className="flex items-center gap-2">

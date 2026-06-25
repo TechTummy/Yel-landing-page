@@ -8,6 +8,19 @@
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- Hidden static form so Netlify's build bot detects the "register" form.
+         The real form is rendered by React (which the bot can't see), so this
+         declares the form name + fields for Netlify Forms to capture submissions. -->
+    <form name="register" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="text" name="address" />
+      <input type="tel" name="phone" />
+      <input type="number" name="childAge" />
+      <input type="text" name="gender" />
+      <textarea name="comment"></textarea>
+    </form>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
