@@ -32,7 +32,7 @@ export default function Home() {
         <AlumniSection />
         <Testimonials />
         {/* <FaqSection /> */}
-        <FinalText />
+        {/* <FinalText /> */}
         <Footer />
         {/* Add more sections as needed */}
     </div>

@@ -30,28 +30,11 @@ function SectionTwo() {
             alt="Hero Logo"
             className="mt-5"
           />
-        <div className='flex gap-8 mt-5'>
-            <img
-            src="/assets/left.png"
-            alt="Hero Logo"
-            className="w-[300px]"
-          />
-              <img
-            src="/assets/button.png"
-            alt="Hero Logo"
-            className="w-[60px] sm:w-[60px] hover:scale-110 transition-transform duration-300 ease-in-out"
-          />
-            <img
-            src="/assets/right.png"
-            alt="Hero Logo"
-            className="w-[300px]"
-          />
-        </div>
         <img src="/assets/text.png" className="max-w-[700px] w-full mt-20" />
 
         {/* Highlighted Words */}
         <div className="font-semibold text-[24px] sm:text-[30px] font-montserrat p-5 flex flex-wrap gap-16 items-center justify-center text-white text-center">
-          {['Entertainment', 'Education', 'Sports'].map((word, idx) => (
+          {['Entertainment', 'Creativity', 'Sports'].map((word, idx) => (
             <h1
               key={idx}
               className="bg-gradient-to-r from-white via-[#f5c46d] via-60% to-[#e94b3c] bg-clip-text text-transparent"

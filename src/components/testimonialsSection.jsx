@@ -60,14 +60,14 @@ const faqs = [
 const leaders = [
   {
     id: 1,
-    name: "Yubin Chang",
-    title: "President of Hope Global Outreach Foundation",
-    img: "./assets/woman.png",
+    name: "LaTrecia Hale",
+    title: "President of Barbara Allen Legacy Foundation",
+    img: "/assets/latrecia-hale.png",
     details: [
-      "30+ years as an educator and motivational speaker",
-      "First-generation immigrant from South Central LA",
-      "Built a successful career in education in Orange County",
-      "Founder of Hope GOF, nurturing youth leadership and opportunity",
+      "25+ years as a healthcare executive and community leader",
+      "Passionate about empowering youth through education, mentorship, and life skills development",
+      "Dedicated to creating pathways to workforce readiness, self-sufficiency, and personal growth",
+      "Committed to helping young people discover their purpose, reach their full potential, and become the best version of themselves",
     ],
   },
   {
@@ -124,7 +124,7 @@ proof that YEL’s influence doesn’t end when the event does.</p>
           <div className="mt-10 flex flex-col justify-center items-center bg-[url('/assets/yel_circle.png')] bg-cover bg-center bg-no-repeat">
         {leaders.map((leader) => (
           <div key={leader.id} className="flex gap-10 mb-10 last:mb-0 w-[80%]">
-            <img src={leader.img} alt={leader.name} className="w-[150px]" />
+            <img src={leader.img} alt={leader.name} className="w-[150px] h-auto self-start flex-shrink-0 object-contain" />
             <div className="flex flex-col">
               <p className="font-bold text-[24px] bg-gradient-to-r from-[#ece7d2] via-[#f5c46d] via-60% to-[#e94b3c] bg-clip-text text-transparent">
                 {leader.name}

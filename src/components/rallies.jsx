@@ -59,7 +59,7 @@ export default function Rallies() {
     </button>
     <button class="flex items-center gap-2 bg-gradient-to-r from-[#4B2E84] via-[#000000] to-[#F3732A] px-6 md:px-10 py-2 rounded-3xl text-white font-bold">
       <img src="/assets/icone-call.png" alt="icon" class="w-10 h-8 md:w-12 md:h-10" />
-      <span>Host a Yel Rally</span>
+      <span>Contact our team</span>
     </button>
   </div>
 

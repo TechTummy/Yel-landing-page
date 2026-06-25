@@ -33,81 +33,59 @@ export default function SectionWhy() {
             <img src="/assets/kids.png" alt="Why Choose Us" className='mt-[20px] w-[70%]'/>
             
           </div>
-          <video
-            src="/assets/yel_vid2.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-auto object-cover"
-            ></video>
+          <div className="flex flex-col md:flex-row w-full items-center justify-center gap-6 md:gap-8 mt-8 px-4 md:px-0">
+            {/* Left: YEL All Star Camp */}
+            <div className="flex-1 flex justify-center">
+              <img
+                src="/assets/all-star-camp.png"
+                alt="YEL All Star Camp"
+                className="w-[200px] sm:w-[250px] md:w-[85%] object-contain"
+              />
+            </div>
+            {/* Center: current onsite video */}
+            <div className="flex-[1.4] flex justify-center">
+              <video
+                src="/assets/yel_vid2.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-auto object-cover"
+              ></video>
+            </div>
+            {/* Right: Summer Time Fun */}
+            <div className="flex-1 flex justify-center">
+              <img
+                src="/assets/summer-fun.png"
+                alt="Summer Time Fun"
+                className="w-[200px] sm:w-[250px] md:w-[85%] object-contain"
+              />
+            </div>
+          </div>
             <p className='text-[18px] font-bold  bg-gradient-to-r from-[#070322] via-[#f5c46d]via-60% to-[#4C0385] bg-clip-text text-transparent mt-8 text-center'>Camp Showbiz is held every Summer in partnership with:</p>
            <div className="flex flex-col md:flex-row w-full mt-10 md:mt-14 gap-6 px-4 md:px-0">
-                      {/* Left Column */}
-                      <div className="flex-1 flex justify-center">
-                        <img
-                          src="/assets/scary.png"
-                          alt="Movement Icon"
-                          className="w-[200px] sm:w-[250px] md:w-[70%] object-contain"
-                        />
-                      </div>
-            
                       {/* Center Column */}
                       <div className="flex-1 flex justify-center items-center">
                         <div className='flex flex-col justify-center items-center'>
                               <img
                                 src="/assets/heartbeat.jpg"
                                 alt="Movement Icon"
-                                className="w-[250px] sm:w-[400px] md:w-[80%]"
+                                className="w-[250px] sm:w-[350px]"
                               />
                           <p className='font-semibold text-[#06071D] text-xl'>STUDIOS</p>
                           <p className='text-[20px] font-extrabold  bg-gradient-to-r from-[#070322] via-[#f5c46d]via-60% to-[#4C0385] bg-clip-text text-transparent mt-8 text-center'>Open to ages 10–20*</p>
                         </div>
-                      </div>
-                      {/* Right Column */}
-                      <div className="flex-1 flex flex-col justify-center items-center md:items-start text-center md:text-left">
-                        <img
-                          src="/assets/summer.png"
-                          alt="Movement Icon"
-                          className="w-[250px] sm:w-[400px] md:w-[50%]"
-                        />
                       </div>
             </div>
           
 
           <div className="flex flex-col md:flex-row w-full mt-10 md:mt-14 gap-6 px-4 md:px-0">
             
-          {/* Left Column */}
-          <div className="flex-1 flex justify-center">
-            <img
-              src="/assets/sometime.png"
-              alt="Movement Icon"
-              className="w-[200px] sm:w-[250px] md:w-[100%] object-contain"
-            />
-          </div>
-
-          {/* Center Column */}
-          <div className="flex-1 flex justify-center items-center">
-            <img
-              src="/assets/yel.png"
-              alt="YEL Logo"
-              className="w-[250px] sm:w-[400px] md:w-[1000px] object-contain"
-            />
-          </div>
-
-          {/* Right Column */}
-          <div className="flex-1 flex flex-col justify-center items-center md:items-start text-center md:text-left">
-            <h1 className="font-black text-[24px] sm:text-[28px] md:text-[30px] leading-tight mb-4">
-              <span>YOUTH</span>
-              <span className="text-[#F06C23] block">EDUTAINMENT</span>
-              <span className="text-[#4F2977] block">LEAGUE</span>
-            </h1>
-            <img
-              src="/assets/heard.png"
-              alt="Movement Icon"
-              className="w-[250px] sm:w-[400px] md:w-[500px]"
-            />
-          </div>
+          <img
+            src="/assets/yel-to-be-heard.png"
+            alt="Sometimes you have to YEL to be heard!"
+            className="w-full object-contain"
+          />
         </div>
           </HomeLayout>
         </div>
