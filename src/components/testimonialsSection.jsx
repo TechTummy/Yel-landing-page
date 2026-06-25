@@ -73,7 +73,7 @@ const leaders = [
   {
     id: 2,
     name: "Darius Farrelly",
-    title: "Founder of YEL  CEO of Hope Global . Outreach Foundation",
+    title: "Founder & CEO YEL",
     img: "./assets/man1.png",
     details: [
       "25+ years in the entertainment industry",

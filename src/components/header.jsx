@@ -45,9 +45,9 @@ function Header() {
               {/* Logo */}
               <a href="/" className="flex items-center justify-center z-10">
                 <img
-                  src="/assets/hope.png"
-                  alt="Logo"
-                  className="w-[150px] sm:w-[180px] h-auto mr-6"
+                  src="/assets/hope-footer.png"
+                  alt="Barbara Allen Legacy Foundation"
+                  className="w-[80px] sm:w-[100px] h-auto mr-6"
                 />
                 <img
                   src="/assets/logo.png"
